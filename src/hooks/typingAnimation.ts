@@ -1,4 +1,4 @@
-export async function typingAnimation(nodeList: NodeListOf<Element>) {
+export async function typingAnimation(nodeList: NodeListOf<Element>, callback?: Function) {
   return new Promise(async (resolve: Function) => {
     let txtList: Array<string> = [];
     for (let node of nodeList) {
@@ -34,6 +34,8 @@ export async function typingAnimation(nodeList: NodeListOf<Element>) {
     }
 
     resolve();
+    if (callback)
+      callback();
 
     while (true) {
       await blinkFunction(800, 200, nodeList[nodeList.length - 1]);

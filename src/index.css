@@ -18,7 +18,7 @@
 body {
   min-width: 100vw;
   min-height: 100vh;
-  background-color: rgb(32, 32, 32);
+  background-color: #101a42;
 }
 
 h1, h2 {
@@ -27,4 +27,8 @@ h1, h2 {
 
 p {
   font-family: 'PixeloidSans';
+}
+
+.hidden {
+  display: none;
 }

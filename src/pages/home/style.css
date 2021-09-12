@@ -1,0 +1,42 @@
+.home {
+  padding: 50px 100px;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.greeting__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 540px;
+  min-width: 550px;
+}
+
+.myImg {
+  width: 400px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.greenball {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  top: 15%;
+  height: 100px;
+  width: 100px;
+  background-color: #6bca6c;
+}
+
+.greenball-1 {
+  transform: scale(120%) translate(15px, 200px);
+}
+
+.greenball-2 {
+  transform: translate(230px, 5px);
+  z-index: -1;
+}
