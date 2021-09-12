@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'PixeloidSansBold';
+  src: url('font/PixeloidSans-Bold.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'PixeloidSans';
+  src: url('font/PixeloidSans.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(32, 32, 32);
+}
+
+h1, h2 {
+  font-family: 'PixeloidSansBold';
+}
+
+p {
+  font-family: 'PixeloidSans';
 }

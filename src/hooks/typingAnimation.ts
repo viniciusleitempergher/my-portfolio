@@ -1,7 +1,3 @@
-let nodeToAnimateList = document.querySelectorAll(".typing-animation");
-
-typingAnimation(nodeToAnimateList);
-
 export async function typingAnimation(nodeList: NodeListOf<Element>) {
   return new Promise(async (resolve: Function) => {
     let txtList: Array<string> = [];
