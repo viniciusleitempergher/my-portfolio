@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'PixeloidSansBold';
-  src: url('font/PixeloidSans-Bold.ttf');
+  font-family: 'RajdhaniBold';
+  src: url('font/Rajdhani-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'PixeloidSans';
-  src: url('font/PixeloidSans.ttf');
+  font-family: 'Rajdhani';
+  src: url('font/Rajdhani-Regular.ttf');
 }
 
 * {
@@ -16,19 +16,34 @@
 }
 
 body {
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   background-color: #101a42;
 }
 
-h1, h2 {
-  font-family: 'PixeloidSansBold';
+h1, h2, h3 {
+  font-family: 'RajdhaniBold';
 }
 
 p {
-  font-family: 'PixeloidSans';
+  font-family: 'Rajdhani';
 }
 
 .hidden {
   display: none;
+}
+
+.title {
+  font-size: 3rem;
+  animation-name: title-appear;
+  animation-duration: 1s;
+}
+
+@keyframes title-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
