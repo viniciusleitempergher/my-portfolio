@@ -6,8 +6,6 @@ import './style.css';
 
 export function Home() {
   useEffect(() => {
-    //typingAnimation(document.querySelectorAll(".typing-animation"));
-    //appear(document.querySelector(".myImg"));
     controlSection();
   }, [])
   return (
