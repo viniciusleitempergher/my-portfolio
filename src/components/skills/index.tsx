@@ -3,6 +3,7 @@ import './style.css';
 import html5img from '../../img/html.svg';
 import css3img from '../../img/CSS3.png';
 import jsimg from '../../img/js.png';
+import tsimg from '../../img/TS.png';
 
 export function Skills() {
   return (
@@ -49,8 +50,8 @@ export function Skills() {
           <span></span>
           <div className="content">
             <h2>04</h2>
-            <h3>HTML</h3>
-            <p></p>
+            <h3>TypeScript</h3>
+            <img src={tsimg} />
           </div>
         </div>
       </div>
