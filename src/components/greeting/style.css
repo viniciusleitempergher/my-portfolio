@@ -1,6 +1,11 @@
+:root {
+  --balls-size-multiplier: 1;
+}
+
 .greeting {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
   min-height: 100vh;
 }
@@ -16,8 +21,12 @@
 .greeting__txt__name {
   font-size: 6rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   color: linear-gradient(45deg, #c1fdc9 0%,#90f9c4 50%,#57f5a1 100%)
+}
+.greeting__txt__desc {
+  font-size: 2rem;
 }
 
 .myImg {
@@ -42,15 +51,72 @@
 }
 
 .greenball-1 {
-  transform: scale(120%) translate(15px, 200px);
+  top: 40%;
+  left: 47%;
+  transform: scale(calc(100% * var(--balls-size-multiplier)));
+  z-index: -1;
 }
 .greenball-2 {
-  transform: translate(11vw, 1vh);
+  top: 15%;
+  left: 50%;
+  transform: scale(calc(100% * var(--balls-size-multiplier)));
   z-index: -1;
 }
 .greenball-3 {
-  transform: translate(16vw, 35vh) scale(150%);
+  top: 57%;
+  left: 70%;
+  transform: scale(calc(150% * var(--balls-size-multiplier)));
 }
 .greenball-4 {
-  transform: translate(-50vw, -1vh) scale(180%);
+  left: -4%;
+  top: 5%;
+  transform: scale(calc(180% * var(--balls-size-multiplier)));
+}
+.greenball-5 {
+  left: -19%;
+  top: 85%;
+  transform: scale(calc(200% * var(--balls-size-multiplier)));
+}
+
+@media screen and (max-width: 1265px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  :root {
+    --balls-size-multiplier: 0.6;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  html {
+    font-size: 7px;
+  }
+
+  .greeting {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+  }
+  .greeting__img {
+    margin-top: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .greeting__img > img {
+    width: 90vw;
+  }
+  .greeting__txt {
+    height: min-content;
+  }
+  .greeting__txt__name {
+    margin: 10px;
+  }
 }

@@ -4,7 +4,7 @@ export function controlSection() {
     let scroll = window.scrollY;
     
     // section 2
-    if (scroll >= 700 && !section2) {
+    if (scroll >= 500 && !section2) {
       section2 = true;
       document.querySelector(".skills")?.classList.toggle("hidden")
     }

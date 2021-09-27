@@ -14,6 +14,7 @@ export function Greeting() {
         <div className="greenball greenball-2"></div>
         <div className="greenball greenball-3"></div>
         <div className="greenball greenball-4"></div>
+        <div className="greenball greenball-5"></div>
         <img src={myImg} className="myImg" />
       </div>
     </div>
