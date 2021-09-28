@@ -1,0 +1,18 @@
+.touch {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.touch__title {
+    margin-bottom: 40px;
+}
+
+.touch__item {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
