@@ -29,14 +29,14 @@ export function Skills() {
         <Card link={tsimg} title="TypeScript" number="04" />
         <Card link={javaImg} title="Java" number="05" />
         <Card link={springBootImg} title="SpringBoot" number="06" />
-        <Card link={nodeImg} title="Node" number="05" />
-        <Card link={reactImg} title="React" number="07" />
-        <Card link={expoImg} title="Expo" number="08" />
-        <Card link={reactImg} title="ReactNative" number="09" />
-        <Card link={mysqlImg} title="MySQL" number="09" />
-        <Card link={postgreImg} title="PostgreSQL" number="09" />
-        <Card link={hibernateImg} title="Hibernate" number="09" />
-        <Card link={sequelizeImg} title="Sequelize" number="09" />
+        <Card link={nodeImg} title="Node" number="07" />
+        <Card link={reactImg} title="React" number="08" />
+        <Card link={expoImg} title="Expo" number="09" />
+        <Card link={reactImg} title="ReactNative" number="10" />
+        <Card link={mysqlImg} title="MySQL" number="11" />
+        <Card link={postgreImg} title="PostgreSQL" number="12" />
+        <Card link={hibernateImg} title="Hibernate" number="13" />
+        <Card link={sequelizeImg} title="Sequelize" number="14" />
       </div>
     </div>
   )
